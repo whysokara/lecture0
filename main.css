@@ -1,0 +1,22 @@
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container>div{
+  background-color: red;
+  font-size: 20px;
+  margin: 2px;
+  padding: 20px;
+  width: 300px;
+}
+@media (min-width: 500px) {
+  div::before{
+    background-color: blue;
+  }
+}
+
+@media (max-width: 499px) {
+  div::before{
+    background-color: #777;
+  }
+}
